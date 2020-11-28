@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>동격의사 클래스</title>
+    <style>
+        .input_box {
+            margin: 30px;
+            padding: 10px 5px;
+            transition: box-shadow .5ps;
+        }
+        .input_box:focus {
+            box-shadow: 0px 0px 30px;color: blue;
+        }
+        .box{
+            width: 30px;
+            height: 30px;
+            background-color: black;
+        }
+        .box:hover{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" class="input_box">
+    <div class="box"></div>
+</body>
+</html>

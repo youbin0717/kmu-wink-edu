@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="Test score JS.JS"></script>
+</head>
+<body>
+    <script>
+    let Yscore = prompt("당신의 점수를 입력해 주세요");;
+let Rank = CheckRank(Yscore);
+
+function CheckRank(Score) {
+    if(Score>90){
+        return 'A';
+    }
+    else if(Score>80){
+        return 'B';
+    }
+    else if(Score>70){
+        return 'C';
+    }
+    else if(Score>60){
+        return 'D';
+    }
+    else{
+        return 'E';
+    }
+}
+alert('당신의 등급은 '+ Rank +'입니다');
+</script>
+</body>
+</html>

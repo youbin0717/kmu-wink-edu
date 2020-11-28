@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS 타임라인 만들기</title>
+</head>
+<body>
+    <div>
+    <textarea id="postline" cols="100" rows="30"> </textarea>
+    <button onclick="snsPost()">글쓰기</button>
+    </div>
+<script>
+    let timeline = document.querySelector('#timeline');
+    
+    function sunPost(){
+        const postValue = document.querySelector('#postline').value;
+        comsole.log(postValue);
+    }
+    timeline.innerHTML += '<div id = timeline> ' +
+    '<div class="comtainer">' +
+    '<h1>이유빈</h1>'
+    +'<div class=fakeimg">' + '<p>' + postValue + '</p>' + '</div>' +
+    '</div>' +
+    '</div>';
+    </script>
+    </body>
+</html>

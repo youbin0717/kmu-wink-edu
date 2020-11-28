@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="timeline">
+        <div>이유빈 - 코딩조아</div>
+    </div>
+
+    <script>
+        var timeline = document.querySelector('#timeline');
+        function add_timeline(content){
+            timeline.innerHTML += '<div>' + content + '</div>';
+        }
+
+        add_timeline('test');
+        console.log(Math.floor(Math.random()* 100))
+    </script>
+</body>
+</html>
